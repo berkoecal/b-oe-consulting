@@ -6,7 +6,7 @@ import { Mail, Linkedin } from "lucide-react";
 export default function CtaSection() {
   return (
     <>
-      <section className="py-24 relative overflow-hidden bg-transparent">
+      <section id="contact" className="py-24 relative overflow-hidden bg-transparent">
         {/* Subtle glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-primary-600/5 rounded-full blur-[120px] pointer-events-none" />
 

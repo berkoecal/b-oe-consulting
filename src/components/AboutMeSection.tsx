@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function AboutMeSection() {
   return (
-    <section className="py-24 bg-dark-900/40 border-t border-white/5 relative overflow-hidden">
+    <section id="about" className="py-24 bg-dark-900/40 border-t border-white/5 relative overflow-hidden">
       {/* Subtle background noise/texture can be added here */}
       <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-600/5 via-transparent to-transparent pointer-events-none" />
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import DataMeshBackground from "@/components/DataMeshBackground";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" className="dark scroll-smooth">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-background text-foreground selection:bg-primary-500/30 relative`} >
         <DataMeshBackground />
+        <Navbar />
         <div className="relative z-10">
           {children}
         </div>

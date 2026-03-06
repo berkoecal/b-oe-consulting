@@ -28,7 +28,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section className="py-24 bg-dark-900/40 relative">
+    <section id="experience" className="py-24 bg-dark-900/40 relative">
       <div className="container mx-auto px-6 max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

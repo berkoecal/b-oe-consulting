@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-transparent">
+    <section className="relative min-h-screen flex items-center pt-40 pb-12 overflow-hidden bg-transparent">
       {/* Sophisticated Background accents */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-600/10 via-background to-background opacity-60" />
@@ -22,7 +22,7 @@ export default function HeroSection() {
           >
             <div className="h-[1px] w-12 bg-primary-500" />
             <span className="text-primary-400 font-semibold tracking-widest uppercase text-sm">
-              Berko &bull; Executive Data Consultant
+               Data & AI Consultancy
             </span>
           </motion.div>
 

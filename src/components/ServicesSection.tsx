@@ -22,7 +22,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-24 bg-transparent relative border-t border-white/5">
+    <section id="services" className="py-24 bg-transparent relative border-t border-white/5">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
