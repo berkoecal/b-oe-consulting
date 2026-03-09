@@ -6,11 +6,14 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "@/i18n/TranslationProvider";
+import { useParams } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { dict } = useTranslation();
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,12 +25,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: dict.navbar.about, href: "#about" },
-    { name: dict.navbar.services, href: "#services" },
-    { name: dict.navbar.experience, href: "#experience" },
-    { name: dict.navbar.publications, href: "#publications" },
-    { name: dict.navbar.portfolio, href: "#portfolio" },
-    { name: dict.navbar.contact, href: "#contact" },
+    { name: dict.navbar.about, href: `/${locale}/#about` },
+    { name: dict.navbar.services, href: `/${locale}/#services` },
+    { name: dict.navbar.experience, href: `/${locale}/#experience` },
+    { name: dict.navbar.publications, href: `/${locale}/#publications` },
+    { name: dict.navbar.portfolio, href: `/${locale}/#portfolio` },
+    { name: dict.navbar.contact, href: `/${locale}/contact` },
   ];
 
   return (
@@ -78,7 +81,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-6">
              <LanguageSwitcher />
              <a
-              href="#contact"
+              href={`/${locale}/contact`}
               className="px-6 py-2 border border-primary-500/30 text-primary-400 text-sm tracking-wider uppercase font-medium hover:bg-primary-500 hover:text-white transition-all duration-300 rounded-sm"
             >
               {dict.navbar.engage}
@@ -123,7 +126,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.a
-                href="#contact"
+                href={`/${locale}/contact`}
                 onClick={() => setIsOpen(false)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
