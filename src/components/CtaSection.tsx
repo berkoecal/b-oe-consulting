@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Mail, Linkedin } from "lucide-react";
+import { useTranslation } from "@/i18n/TranslationProvider";
 
 export default function CtaSection() {
+  const { dict } = useTranslation();
   return (
     <>
       <section id="contact" className="py-24 relative overflow-hidden bg-transparent">
@@ -19,19 +21,19 @@ export default function CtaSection() {
             className="max-w-3xl mx-auto"
           >
             <h2 className="text-sm font-bold tracking-widest text-primary-500 uppercase mb-6">
-              Start a Conversation
+              {dict.cta.subtitle}
             </h2>
             <h3 className="font-serif text-4xl md:text-6xl font-normal leading-tight mb-8">
-              Let's refine your <br />
-              <span className="italic text-gray-400">data strategy.</span>
+              {dict.cta.title1} <br />
+              <span className="italic text-gray-400">{dict.cta.title2}</span>
             </h3>
             <p className="text-xl text-gray-500 mb-12 font-light leading-relaxed">
-              Whether you are architecting a new Data Mesh or seeking strategic advisory on AI implementation, I bring the executive experience required to scale your vision.
+              {dict.cta.description}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <button className="w-full sm:w-auto px-10 py-5 bg-primary-600 hover:bg-primary-500 text-white rounded-sm font-medium transition-all duration-300 flex items-center justify-center gap-3">
                 <Mail className="w-4 h-4" />
-                Contact Me Directly
+                {dict.cta.button}
               </button>
               <button className="w-full sm:w-auto px-10 py-5 hover:bg-white/5 border border-white/10 text-foreground rounded-sm font-medium transition-all duration-300 flex items-center justify-center gap-3">
                 <Linkedin className="w-4 h-4" />
@@ -48,7 +50,7 @@ export default function CtaSection() {
           <div className="text-center md:text-left">
             <p className="font-serif text-xl text-white italic mb-1">Berko</p>
             <p className="text-sm text-gray-500 font-light">
-              Executive Consultant &bull; Data & AI
+              {dict.about.role} &bull; Data & AI
             </p>
           </div>
           

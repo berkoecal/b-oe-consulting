@@ -1,0 +1,107 @@
+{
+  "navbar": {
+    "about": "Über mich",
+    "services": "Leistungen",
+    "experience": "Erfahrung",
+    "publications": "Publikationen",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "engage": "Anfragen"
+  },
+  "hero": {
+    "subtitle": "Data & AI Consultancy",
+    "title1": "Architektur für",
+    "title2": "intelligente",
+    "title3": "Unternehmen.",
+    "description": "Ich arbeite mit Branchenführern zusammen, um skalierbare Data-Mesh-Architekturen zu entwerfen und transformative KI-Lösungen zu implementieren. Präzision in Millionenhöhe für die anspruchsvollsten Marken der Welt.",
+    "cta1": "Projekt anfragen",
+    "cta2": "Meine Erfolge entdecken"
+  },
+  "brands": {
+    "trustedBy": "Vertraut von visionären Führungskräften bei",
+    "industries": "Automotive • Retail • Finance • Digital"
+  },
+  "about": {
+    "subtitle": "Meine Philosophie",
+    "title1": "Daten sind mehr als Infrastruktur.",
+    "title2": "Sie sind Strategie.",
+    "p1": "Im Laufe meiner Karriere habe ich mit Führungsteams globaler Konzerne wie <strong className=\"text-white font-medium\">BMW, Mercedes, Volkswagen, LIDL und REWE</strong> zusammengearbeitet, um komplexe Datenlandschaften zu entflechten und skalierbare, intelligente Architekturen aufzubauen.",
+    "p2": "Mein Ansatz ist geprägt von Pragmatismus und Vision. Ob es um die Implementierung eines dezentralen Data Mesh oder den Einsatz transformativer KI-Lösungen geht – ich schließe die Lücke zwischen tiefgreifender technischer Umsetzung und übergeordneter Geschäftsstrategie.",
+    "p3": "Derzeit treibe ich als Teil der <strong className=\"text-white font-medium\">PostFinance</strong> die digitale Transformation voran und gestalte die Zukunft der Finanzdatenarchitektur in der Schweiz.",
+    "role": "Executive Consultant"
+  },
+  "services": {
+    "subtitle": "Kernkompetenzen",
+    "title1": "Wie ich Sie",
+    "title2": "unterstütze.",
+    "description": "Ich biete keine Standardlösungen. Ich liefere maßgeschneiderte Architekturstrategien und technische Implementierungen, die auf die individuellen Anforderungen Ihres Unternehmens zugeschnitten sind.",
+    "items": [
+      {
+        "id": "01",
+        "title": "Data Mesh Architektur",
+        "desc": "Entwicklung dezentraler, skalierbarer Daten-Ökosysteme. Ich befähige Ihre Fachbereiche, die Verantwortung für ihre Datenprodukte zu übernehmen und beschleunige so die Agilität Ihres Unternehmens ohne zentrale Flaschenhälse."
+      },
+      {
+        "id": "02",
+        "title": "Künstliche Intelligenz",
+        "desc": "Bereitstellung generativer KI und Machine-Learning-Lösungen, die echten geschäftlichen Mehrwert schaffen. Von der Automatisierung komplexer Workflows bis zur Entwicklung intelligenter, prädiktiver Anwendungen."
+      },
+      {
+        "id": "03",
+        "title": "Data & Analytics Strategie",
+        "desc": "Transformation von Rohdaten in strategische Vermögenswerte. Ich bewerte Ihre Datenreife und konzipiere fortschrittliche Analytics-Pipelines, die Branchenstandards erfüllen."
+      }
+    ]
+  },
+  "experience": {
+    "subtitle": "Executive Track Record",
+    "title1": "Vertraut von globalen ",
+    "title2": "Branchenführern.",
+    "title": "Karriereweg",
+    "items": [
+      {
+        "company": "PostFinance",
+        "role": "Data Strategist & Architect",
+        "period": "2023 - Heute",
+        "desc": "Vorantreiben der digitalen Transformation und Architektur moderner Finanzdatenplattformen in der Schweiz."
+      },
+      {
+        "company": "KPMG",
+        "role": "Senior Consultant Data & Analytics",
+        "period": "2020 - 2023",
+        "desc": "Beratung bedeutender Einzelhandels- und Konsumgüterkunden wie LIDL und REWE in den Bereichen Datenstrategie, Governance und Implementierung von Advanced Analytics."
+      },
+      {
+        "company": "Deloitte",
+        "role": "Consultant AI & Data",
+        "period": "2017 - 2020",
+        "desc": "Architektur intelligenter Datenlösungen und Bereitstellung von Machine-Learning-Modellen für Automobilgiganten wie BMW, Mercedes und Volkswagen."
+      }
+    ]
+  },
+  "cta": {
+    "subtitle": "Kontakt aufnehmen",
+    "title1": "Bereit, die Zukunft",
+    "title2": "zu gestalten?",
+    "description": "Ganz gleich, ob Sie eine komplexe Datenlandschaft entflechten oder eine generative KI-Lösung entwerfen möchten – lassen Sie uns besprechen, wie wir einen messbaren Mehrwert für Ihr Unternehmen schaffen können.",
+    "button": "Beratungsgespräch vereinbaren",
+    "email": "berko@example.com",
+    "location": "Zürich, Schweiz"
+  },
+  "contactPage": {
+    "title": "Kontakt aufnehmen",
+    "heading1": "Lassen Sie uns",
+    "heading2": "etwas Außergewöhnliches schaffen.",
+    "description": "Hinterlassen Sie unten Ihre Daten und ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Max Mustermann",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "max@beispiel.de",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Wie kann ich Ihnen helfen?",
+      "submitButton": "Nachricht Senden",
+      "submittingText": "Wird gesendet..."
+    }
+  }
+}

@@ -1,28 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "@/i18n/TranslationProvider";
 
 export default function ExperienceSection() {
+  const { dict } = useTranslation();
   const experiences = [
     {
-      company: "PostFinance",
-      role: "Executive Data Consultant",
-      period: "Present",
-      description: "Driving digital transformation and data initiatives in the Swiss financial sector. Implementing modern data architecture and AI use-cases to enhance customer experiences, operational efficiency, and regulatory compliance.",
+      ...dict.experience.items[0],
       highlight: true
     },
     {
-      company: "Deloitte",
-      role: "Senior Strategic Advisor",
-      period: "Previous",
-      description: "Advised top-tier automotive clients including BMW, Mercedes-Benz, and Volkswagen. Delivered high-value strategic consulting on data platforms, enterprise analytics, and digital transformation roadmaps.",
+      ...dict.experience.items[1],
       highlight: false
     },
     {
-      company: "KPMG",
-      role: "Data & AI Consultant",
-      period: "Previous",
-      description: "Provided expert advisory services for major retail giants LIDL and REWE. Focused on supply chain analytics, data maturity assessments, and advanced reporting methodologies to optimize operations.",
+      ...dict.experience.items[2],
       highlight: false
     }
   ];
@@ -38,10 +31,10 @@ export default function ExperienceSection() {
           className="mb-20 text-center"
         >
           <h2 className="text-sm font-bold tracking-widest text-primary-500 uppercase mb-4">
-            Executive Track Record
+            {dict.experience.subtitle}
           </h2>
           <h3 className="font-serif text-4xl md:text-5xl font-normal leading-tight">
-            Trusted by global <span className="italic text-gray-400">industry leaders.</span>
+            {dict.experience.title1} <span className="italic text-gray-400">{dict.experience.title2}</span>
           </h3>
         </motion.div>
 
