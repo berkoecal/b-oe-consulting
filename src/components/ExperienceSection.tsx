@@ -57,8 +57,8 @@ export default function ExperienceSection() {
               </div>
 
               {/* Content Card */}
-              <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2.5rem)] ml-12 md:ml-0 md:group-even:pr-10 md:group-odd:pl-10">
-                <div className="glass-panel p-8 rounded-sm hover:-translate-y-1 transition-transform duration-500 relative overflow-hidden">
+              <div className="w-[calc(100%-2rem)] md:w-[calc(50%-2.5rem)] ml-8 md:ml-0 md:group-even:pr-10 md:group-odd:pl-10">
+                <div className="glass-panel p-6 md:p-8 rounded-sm hover:-translate-y-1 transition-transform duration-500 relative overflow-hidden">
                   {exp.highlight && (
                      <div className="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 rounded-full blur-[40px] pointer-events-none" />
                   )}
@@ -73,7 +73,7 @@ export default function ExperienceSection() {
                     </p>
                   </div>
                   <p className="text-gray-500 leading-relaxed font-light">
-                    {exp.description}
+                    {exp.desc}
                   </p>
                 </div>
               </div>

@@ -10,10 +10,10 @@
   },
   "hero": {
     "subtitle": "Data & AI Consultancy",
-    "title1": "Architecting",
-    "title2": "intelligent",
-    "title3": "enterprises.",
-    "description": "I partner with industry leaders to design scalable Data Mesh architectures and deploy transformative AI solutions. Delivering million-franc exactitude for the world's most demanding brands.",
+    "title1": "Creating Value",
+    "title2": "from",
+    "title3": "Data & AI.",
+    "description": "I partner with industry leaders from Switzerland and Germany to design scalable Data & AI solutions and deploy transformative AI strategies. Delivering measurable results and sustainable value creation.",
     "cta1": "Discuss an Engagement",
     "cta2": "Explore My Track Record"
   },
@@ -23,33 +23,33 @@
   },
   "about": {
     "subtitle": "My Philosophy",
-    "title1": "Data is more than infrastructure.",
-    "title2": "It is strategy.",
-    "p1": "Throughout my career, I have partnered with executive teams at global powerhouses, including <strong className=\"text-white font-medium\">BMW, Mercedes, Volkswagen, LIDL, and REWE</strong>, to untangle complex data landscapes and build scalable, intelligent architectures.",
-    "p2": "My approach is rooted in practicality and vision. Whether implementing a decentralized Data Mesh or deploying transformative AI solutions, I bridge the gap between deep technical execution and high-level business strategy.",
-    "p3": "Currently, I am driving digital transformation initiatives at <strong className=\"text-white font-medium\">PostFinance</strong>, shaping the future of financial data architecture in Switzerland.",
+    "title1": "Tech-Excellence meets",
+    "title2": "Business Leadership.",
+    "p1": "Throughout my career, I have partnered with executive teams at global powerhouses like <strong className=\"text-white font-medium\">BMW, Mercedes, Volkswagen, LIDL, and REWE</strong>. My core strength: bridging the exceedingly rare gap between deep technological expertise and high-level strategic business steering.",
+    "p2": "Whether architecting scalable cloud data platforms on <strong className=\"text-white font-medium\">Snowflake, Databricks, and AWS</strong> or taking ownership of complex SAFe project deliveries within a challenging stakeholder landscape—I translate digital visions into measurable and deliverable reality.",
+    "p3": "My experience combines <strong className=\"text-white font-medium\">Classic Data Analytics, AI Strategy, and Enterprise Data Mesh Transformations</strong>. Currently, I am driving the transformation of the financial data ecosystem at PostFinance.",
     "role": "Executive Consultant"
   },
   "services": {
     "subtitle": "Core Competencies",
     "title1": "How I partner",
     "title2": "with you.",
-    "description": "I do not offer cookie-cutter solutions. I deliver bespoke architectural strategies and technical implementation tailored to the unique scale of your enterprise.",
+    "description": "A powerful hybrid of deep technological architecture and strategic business steering. Tailored entirely to your enterprise's transformation.",
     "items": [
       {
         "id": "01",
-        "title": "Data Mesh Architecture",
-        "desc": "Designing decentralized, scalable data ecosystems. I empower your domains to take ownership of their data products, accelerating enterprise agility without centralized bottlenecks."
+        "title": "Data & AI Strategy & Governance",
+        "desc": "Designing future-proof data strategies and rigorous Data & AI Governance models. I align key business objectives with technological capabilities to frame the blueprint for successful Data Mesh adoptions."
       },
       {
         "id": "02",
-        "title": "Artificial Intelligence",
-        "desc": "Deploying generative AI and machine learning solutions that drive real business value. From automating complex workflows to building smart, predictive applications."
+        "title": "Cloud Data Platforms & Analytics",
+        "desc": "Architecting and engineering scalable enterprise data ecosystems. From classic Data Analytics (BI, DWH) to implementing modern Lakehouse architectures powered by Snowflake, Databricks, and AWS."
       },
       {
         "id": "03",
-        "title": "Data & Analytics Strategy",
-        "desc": "Transforming raw data into strategic assets. I evaluate your data maturity and architect advanced analytics pipelines that meet industry-leading standards."
+        "title": "Enterprise Transformation & Agile Delivery",
+        "desc": "End-to-end management of complex, large-scale cloud transformations. Leveraging profound experience within the SAFe framework and robust stakeholder management, I ensure strategic roadmaps are delivered flawlessly."
       }
     ]
   },
@@ -78,6 +78,23 @@
         "desc": "Architected intelligent data solutions and deployed machine learning models for automotive giants like BMW, Mercedes, and Volkswagen."
       }
     ]
+  },
+  "matrix": {
+    "subtitle": "Industries & Expertise",
+    "title1": "Experience",
+    "title2": "Matrix.",
+    "industries": {
+      "automotive": "Automotive",
+      "retail": "Retail & CPG",
+      "finance": "Financial Services",
+      "telecom": "Telecom"
+    },
+    "capabilities": {
+      "strategy": "Data & AI Strategy",
+      "platforms": "Cloud Data Platforms",
+      "analytics": "BI & Data Analytics",
+      "enterprise": "Enterprise Transformation"
+    }
   },
   "cta": {
     "subtitle": "Initiate Contact",

@@ -1,16 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "@/i18n/TranslationProvider";
 
 export default function AboutMeSection() {
+  const { dict } = useTranslation();
+  const a = dict.about;
+
   return (
     <section id="about" className="py-24 bg-dark-900/40 border-t border-white/5 relative overflow-hidden">
-      {/* Subtle background noise/texture can be added here */}
       <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary-600/5 via-transparent to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          {/* Image Placeholder */}
+          {/* Image placeholder */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -23,7 +26,6 @@ export default function AboutMeSection() {
                 [Professional Portrait]
               </span>
             </div>
-            {/* Elegant border accent */}
             <div className="absolute inset-0 border border-primary-500/20 rounded-lg group-hover:border-primary-500/40 transition-colors duration-500" />
             <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-dark-900/80 to-transparent" />
           </motion.div>
@@ -36,31 +38,23 @@ export default function AboutMeSection() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <h2 className="text-sm font-bold tracking-widest text-primary-500 uppercase mb-4">
-              My Philosophy
+              {a.subtitle}
             </h2>
             <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal leading-tight mb-8">
-              Data is more than infrastructure. <br />
-              <span className="italic text-gray-400">It is strategy.</span>
+              {a.title1} <br />
+              <span className="italic text-gray-400">{a.title2}</span>
             </h3>
 
             <div className="space-y-6 text-lg text-gray-400 leading-relaxed font-light">
-              <p>
-                Throughout my career, I have partnered with executive teams at global powerhouses, including <strong className="text-white font-medium">BMW, Mercedes, Volkswagen, LIDL, and REWE</strong>, to untangle complex data landscapes and build scalable, intelligent architectures.
-              </p>
-              <p>
-                My approach is rooted in practicality and vision. Whether implementing a decentralized Data Mesh or deploying transformative AI solutions, I bridge the gap between deep technical execution and high-level business strategy.
-              </p>
-              <p>
-                Currently, I am driving digital transformation initiatives at <strong className="text-white font-medium">PostFinance</strong>, shaping the future of financial data architecture in Switzerland.
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: a.p1 }} />
+              <p dangerouslySetInnerHTML={{ __html: a.p2 }} />
+              <p dangerouslySetInnerHTML={{ __html: a.p3 }} />
             </div>
 
             <div className="mt-10 pt-10 border-t border-white/10">
-              <p className="font-serif text-2xl text-white italic">
-                Berko
-              </p>
+              <p className="font-serif text-2xl text-white italic">Berko</p>
               <p className="text-sm text-primary-400 mt-1 uppercase tracking-wider">
-                Executive Consultant
+                {a.role}
               </p>
             </div>
           </motion.div>

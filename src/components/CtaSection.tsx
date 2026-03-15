@@ -37,7 +37,7 @@ export default function CtaSection() {
               </button>
               <button className="w-full sm:w-auto px-10 py-5 hover:bg-white/5 border border-white/10 text-foreground rounded-sm font-medium transition-all duration-300 flex items-center justify-center gap-3">
                 <Linkedin className="w-4 h-4" />
-                Connect on LinkedIn
+                LinkedIn
               </button>
             </div>
           </motion.div>

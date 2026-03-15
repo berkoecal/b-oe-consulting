@@ -89,11 +89,11 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex items-center gap-6">
+          <div className="md:hidden flex items-center gap-4">
             <LanguageSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden text-white hover:text-primary-400 transition-colors z-50"
+              className="md:hidden text-white hover:text-primary-400 transition-colors z-50 p-2"
             >
               {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>
@@ -109,7 +109,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="fixed inset-0 z-40 bg-dark-900/95 backdrop-blur-xl flex flex-col items-center justify-center"
+            className="fixed inset-0 z-40 bg-dark-900/95 backdrop-blur-xl flex flex-col items-center justify-center pt-24"
           >
             <nav className="flex flex-col items-center gap-10">
               {navLinks.map((link, index) => (

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useTranslation } from "@/i18n/TranslationProvider";
 
 // Use the exact filenames provided in public/brands
 const brands = [
@@ -20,6 +21,7 @@ const brands = [
 const scrollingBrands = [...brands, ...brands];
 
 export default function BrandList() {
+  const { dict } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const [contentWidth, setContentWidth] = useState(0);
 
@@ -35,7 +37,7 @@ export default function BrandList() {
       <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-dark-900 to-transparent z-10 pointer-events-none" />
 
       <div className="container mx-auto px-6 mb-10 text-center text-sm font-bold tracking-widest text-primary-500/50 uppercase">
-        Trusted Advisory For
+        {dict.brands.trustedBy}
       </div>
 
       <div className="relative flex whitespace-nowrap overflow-hidden">

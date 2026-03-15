@@ -10,46 +10,46 @@
   },
   "hero": {
     "subtitle": "Data & AI Consultancy",
-    "title1": "Architektur für",
-    "title2": "intelligente",
-    "title3": "Unternehmen.",
-    "description": "Ich arbeite mit Branchenführern zusammen, um skalierbare Data-Mesh-Architekturen zu entwerfen und transformative KI-Lösungen zu implementieren. Präzision in Millionenhöhe für die anspruchsvollsten Marken der Welt.",
+    "title1": "Creating Value",
+    "title2": "from",
+    "title3": "Data & AI.",
+    "description": "Ich arbeite mit Branchenführern aus der Schweiz und Deutschland zusammen, um skalierbare Data & AI Lösungen zu entwerfen und transformative KI-Strategien zu erarbeiten. Im Fokus stehen dabei immer messbare Ergebnisse und nachhaltige Wertschöpfung.",
     "cta1": "Projekt anfragen",
-    "cta2": "Meine Erfolge entdecken"
+    "cta2": "Track Record"
   },
   "brands": {
-    "trustedBy": "Vertraut von visionären Führungskräften bei",
+    "trustedBy": "Vertraut von globalen Branchenführern",
     "industries": "Automotive • Retail • Finance • Digital"
   },
   "about": {
     "subtitle": "Meine Philosophie",
-    "title1": "Daten sind mehr als Infrastruktur.",
-    "title2": "Sie sind Strategie.",
-    "p1": "Im Laufe meiner Karriere habe ich mit Führungsteams globaler Konzerne wie <strong className=\"text-white font-medium\">BMW, Mercedes, Volkswagen, LIDL und REWE</strong> zusammengearbeitet, um komplexe Datenlandschaften zu entflechten und skalierbare, intelligente Architekturen aufzubauen.",
-    "p2": "Mein Ansatz ist geprägt von Pragmatismus und Vision. Ob es um die Implementierung eines dezentralen Data Mesh oder den Einsatz transformativer KI-Lösungen geht – ich schließe die Lücke zwischen tiefgreifender technischer Umsetzung und übergeordneter Geschäftsstrategie.",
-    "p3": "Derzeit treibe ich als Teil der <strong className=\"text-white font-medium\">PostFinance</strong> die digitale Transformation voran und gestalte die Zukunft der Finanzdatenarchitektur in der Schweiz.",
+    "title1": "Tech-Exzellenz trifft",
+    "title2": "Business-Führung.",
+    "p1": "Im Laufe meiner Karriere habe ich mit Führungsteams globaler Konzerne wie <strong className=\"text-white font-medium\">BMW, Mercedes, Volkswagen, LIDL und REWE</strong> zusammengearbeitet. Meine Stärke: Den extrem seltenen Brückenschlag zwischen tiefgreifendem Technologie-Knowhow und strategischer Business-Steuerung.",
+    "p2": "Ganz gleich, ob ich skalierbare Cloud-Datenplattformen mit <strong className=\"text-white font-medium\">Snowflake, Databricks und AWS</strong> architekteuiere oder komplexe SAFe-Projektstrukturen im Stakeholder-Umfeld verantworte – ich übersetze digitale Visionen in messbare und lieferbare Realität.",
+    "p3": "Meine Erfahrung vereint <strong className=\"text-white font-medium\">klassisches Data Analytics, AI Strategy und Enterprise Data Mesh Transformationen</strong>. Derzeit treibe ich als Teil der PostFinance die Transformation der Finanzdatenlandschaft voran.",
     "role": "Executive Consultant"
   },
   "services": {
     "subtitle": "Kernkompetenzen",
     "title1": "Wie ich Sie",
     "title2": "unterstütze.",
-    "description": "Ich biete keine Standardlösungen. Ich liefere maßgeschneiderte Architekturstrategien und technische Implementierungen, die auf die individuellen Anforderungen Ihres Unternehmens zugeschnitten sind.",
+    "description": "Eine Kombination aus tiefgreifender Technologie-Architektur und strategischer Business-Steuerung. Maßgeschneidert für die Transformation Ihres Unternehmens.",
     "items": [
       {
         "id": "01",
-        "title": "Data Mesh Architektur",
-        "desc": "Entwicklung dezentraler, skalierbarer Daten-Ökosysteme. Ich befähige Ihre Fachbereiche, die Verantwortung für ihre Datenprodukte zu übernehmen und beschleunige so die Agilität Ihres Unternehmens ohne zentrale Flaschenhälse."
+        "title": "Data & AI Strategy & Governance",
+        "desc": "Entwicklung zukunftssicherer Datenstrategien und Data & AI Governance-Modelle. Ich verbinde Business-Ziele mit technologischen Möglichkeiten, um den Rahmen für erfolgreiche Data Mesh Adaptionen zu schaffen."
       },
       {
         "id": "02",
-        "title": "Künstliche Intelligenz",
-        "desc": "Bereitstellung generativer KI und Machine-Learning-Lösungen, die echten geschäftlichen Mehrwert schaffen. Von der Automatisierung komplexer Workflows bis zur Entwicklung intelligenter, prädiktiver Anwendungen."
+        "title": "Cloud Data Platforms & Analytics",
+        "desc": "Architektur und Aufbau skalierbarer Datenökosysteme. Von klassischem Data Analytics (BI, DWH) bis zur Implementierung moderner Lakehouse-Architekturen mit Snowflake, Databricks und AWS."
       },
       {
         "id": "03",
-        "title": "Data & Analytics Strategie",
-        "desc": "Transformation von Rohdaten in strategische Vermögenswerte. Ich bewerte Ihre Datenreife und konzipiere fortschrittliche Analytics-Pipelines, die Branchenstandards erfüllen."
+        "title": "Enterprise Transformation & Agile Delivery",
+        "desc": "End-to-End Steuerung komplexer Cloud-Transformationen. Mit tiefgreifender Erfahrung im SAFe-Umfeld und starkem Stakeholder-Management sorge ich dafür, dass strategische Vorgaben pünktlich realisiert werden."
       }
     ]
   },
@@ -78,6 +78,23 @@
         "desc": "Architektur intelligenter Datenlösungen und Bereitstellung von Machine-Learning-Modellen für Automobilgiganten wie BMW, Mercedes und Volkswagen."
       }
     ]
+  },
+  "matrix": {
+    "subtitle": "Branchen & Expertise",
+    "title1": "Erfahrung im",
+    "title2": "Überblick.",
+    "industries": {
+      "automotive": "Automotive",
+      "retail": "Retail & CPG",
+      "finance": "Financial Services",
+      "telecom": "Telecommunications"
+    },
+    "capabilities": {
+      "strategy": "Data & AI Strategy",
+      "platforms": "Cloud Data Platforms",
+      "analytics": "BI & Data Analytics",
+      "enterprise": "Enterprise Transformation"
+    }
   },
   "cta": {
     "subtitle": "Kontakt aufnehmen",
