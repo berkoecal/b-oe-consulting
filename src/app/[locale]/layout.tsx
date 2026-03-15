@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "../globals.css";
 import DataMeshBackground from "@/components/DataMeshBackground";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import { getDictionary, Locale } from "@/i18n/getDictionary";
 import { TranslationProvider } from "@/i18n/TranslationProvider";
 
@@ -41,6 +42,7 @@ export default async function RootLayout({
           <div className="relative z-10">
             {children}
           </div>
+          <Footer />
         </TranslationProvider>
       </body>
     </html>

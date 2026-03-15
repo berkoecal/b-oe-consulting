@@ -148,5 +148,37 @@
     "imprint": "Impressum",
     "privacy": "Datenschutzerklärung",
     "rights": "Alle Rechte vorbehalten."
+  },
+  "news": {
+    "subtitle": "Perspektiven & Analysen",
+    "title": "News & Wissen",
+    "intro": "Meine Sichtweise auf aktuelle Entwicklungen in Data, AI und digitaler Transformation.",
+    "readMore": "Weiterlesen",
+    "backToAll": "Alle Beiträge",
+    "minRead": "Min. Lesezeit",
+    "filterAll": "Alle"
+  },
+  "solutions": {
+    "subtitle": "Produkte & Frameworks",
+    "title1": "Aus der Praxis.",
+    "title2": "Für die Praxis.",
+    "intro": "Von uns entwickelte skalierbare Produkte und strukturierte Frameworks als Referenz und Inspiration, um in der KI-Ära erfolgreich zu sein.",
+    "upscill": {
+      "tag": "SaaS Produkt",
+      "name": "upscill.ai",
+      "tagline": "Der AI Sales Companion für SDRs",
+      "desc": "upscill.ai ist eine Voice-AI-Plattform, die Sales Development Representatives in Echtzeit coacht und begleitet. Sie steigert Abschlussraten, beschleunigt das Onboarding und sorgt für konsistentes Messaging – saisonunabhängig und skalierbar.",
+      "features": ["Voice AI", "SDR Enablement", "Real-Time Coaching", "CRM Integration", "Analytics"],
+      "cta": "upscill.ai besuchen",
+      "ctaSecondary": "Demo buchen"
+    },
+    "framework": {
+      "tag": "Consulting Framework",
+      "name": "AI Excellence Framework",
+      "tagline": "AI Einführung. Strukturiert. Bewährt.",
+      "desc": "Ein praxiserprobtes Framework für die ganzheitliche Einführung von Künstlicher Intelligenz im Unternehmenskontext – von der Strategie bis zum operativen Rollout. Entwickelt aus Hunderten Beratungsstunden bei Dax-Konzernen.",
+      "pillars": ["AI Strategie", "Governance & Compliance", "Datenreife", "Pilot & Rollout", "Change Management", "ROI Messung"],
+      "cta": "Framework anfragen"
+    }
   }
 }

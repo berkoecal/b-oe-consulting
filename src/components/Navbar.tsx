@@ -28,8 +28,8 @@ export default function Navbar() {
     { name: dict.navbar.about, href: `/${locale}/#about` },
     { name: dict.navbar.services, href: `/${locale}/#services` },
     { name: dict.navbar.experience, href: `/${locale}/#experience` },
-    { name: dict.navbar.publications, href: `/${locale}/#publications` },
-    { name: dict.navbar.portfolio, href: `/${locale}/#portfolio` },
+    { name: dict.navbar.publications, href: `/${locale}/news` },
+    { name: dict.navbar.portfolio, href: `/${locale}/solutions` },
   ];
 
   return (

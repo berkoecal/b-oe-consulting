@@ -47,3 +47,52 @@ body {
 .font-serif {
   font-family: var(--font-serif), serif;
 }
+
+/* Article prose styles */
+.prose-article {
+  color: #d0d4dc;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+.prose-article p {
+  margin-bottom: 1.5rem;
+}
+.prose-article h2 {
+  font-family: var(--font-serif), serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #eceff4;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.prose-article h3 {
+  font-family: var(--font-serif), serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #ccd0da;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.prose-article ul,
+.prose-article ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.prose-article ul { list-style-type: disc; }
+.prose-article ol { list-style-type: decimal; }
+.prose-article li { margin-bottom: 0.5rem; }
+.prose-article strong {
+  color: #eceff4;
+  font-weight: 600;
+}
+.prose-article em { color: #b8c0cc; }
+.prose-article blockquote {
+  border-left: 3px solid #b8860b;
+  padding: 0.75rem 1.25rem;
+  margin: 2rem 0;
+  background: rgba(184, 134, 11, 0.06);
+  border-radius: 0 0.25rem 0.25rem 0;
+  color: #c0c8d8;
+  font-style: italic;
+  font-size: 1.05rem;
+}

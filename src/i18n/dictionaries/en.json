@@ -148,5 +148,37 @@
     "imprint": "Imprint",
     "privacy": "Privacy Policy",
     "rights": "All rights reserved."
+  },
+  "news": {
+    "subtitle": "Perspectives & Analysis",
+    "title": "News & Insights",
+    "intro": "My perspective on current developments in Data, AI, and digital transformation.",
+    "readMore": "Read more",
+    "backToAll": "All articles",
+    "minRead": "min read",
+    "filterAll": "All"
+  },
+  "solutions": {
+    "subtitle": "Products & Frameworks",
+    "title1": "Built from practice.",
+    "title2": "Built for impact.",
+    "intro": "Scalable products and structured frameworks that help enterprises confidently step into the AI era.",
+    "upscill": {
+      "tag": "SaaS Product",
+      "name": "upscill.ai",
+      "tagline": "The AI Sales Companion for SDRs",
+      "desc": "upscill.ai is a Voice AI platform that coaches and assists Sales Development Representatives in real-time conversations. It improves close rates, accelerates onboarding, and drives consistent messaging — at scale.",
+      "features": ["Voice AI", "SDR Enablement", "Real-Time Coaching", "CRM Integration", "Analytics"],
+      "cta": "Visit upscill.ai",
+      "ctaSecondary": "Book a Demo"
+    },
+    "framework": {
+      "tag": "Consulting Framework",
+      "name": "AI Excellence Framework",
+      "tagline": "AI Adoption. Structured. Proven.",
+      "desc": "A practitioner-built framework for end-to-end AI adoption in enterprises — from strategy to operational rollout. Developed through hundreds of advisory hours across DAX-listed corporations.",
+      "pillars": ["AI Strategy", "Governance & Compliance", "Data Readiness", "Pilot & Rollout", "Change Management", "ROI Measurement"],
+      "cta": "Request Framework"
+    }
   }
 }
