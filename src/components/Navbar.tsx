@@ -30,7 +30,6 @@ export default function Navbar() {
     { name: dict.navbar.experience, href: `/${locale}/#experience` },
     { name: dict.navbar.publications, href: `/${locale}/#publications` },
     { name: dict.navbar.portfolio, href: `/${locale}/#portfolio` },
-    { name: dict.navbar.contact, href: `/${locale}/contact` },
   ];
 
   return (

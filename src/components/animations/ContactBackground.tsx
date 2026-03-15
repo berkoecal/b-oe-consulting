@@ -83,7 +83,11 @@ export default function ContactBackground() {
             w.yBase * H +
             Math.sin(x * w.freq + t * w.speed) * w.amp +
             Math.sin(x * w.freq * 0.45 + t * w.speed * 0.55) * w.amp * 0.4;
-          x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          if (x === 0) {
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
         }
         ctx.stroke();
       });

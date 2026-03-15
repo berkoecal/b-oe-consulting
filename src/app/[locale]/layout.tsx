@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Berko | Executive Data & AI Consultant",
+  title: "Berk Öcal | Executive Data & AI Consultant",
   description: "Expert consulting services in Data Mesh, Data & Analytics, and Artificial Intelligence. Delivering scalable solutions for enterprise organizations.",
 };
 

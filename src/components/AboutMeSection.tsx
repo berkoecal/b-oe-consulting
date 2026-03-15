@@ -52,7 +52,7 @@ export default function AboutMeSection() {
             </div>
 
             <div className="mt-10 pt-10 border-t border-white/10">
-              <p className="font-serif text-2xl text-white italic">Berko</p>
+              <p className="font-serif text-2xl text-white italic">Berk Öcal</p>
               <p className="text-sm text-primary-400 mt-1 uppercase tracking-wider">
                 {a.role}
               </p>

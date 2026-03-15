@@ -1,9 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useTranslation } from "@/i18n/TranslationProvider";
 import { useState } from "react";
+import { X } from "lucide-react";
 
 export default function ExperienceMatrix() {
   const { dict } = useTranslation();
@@ -11,6 +12,7 @@ export default function ExperienceMatrix() {
 
   const [hoveredRow, setHoveredRow] = useState<string | null>(null);
   const [hoveredCol, setHoveredCol] = useState<string | null>(null);
+  const [selectedCell, setSelectedCell] = useState<{ tech: string; ind: string } | null>(null);
 
   const technologies = [
     { id: "strategy", label: m.capabilities.strategy },
@@ -152,6 +154,7 @@ export default function ExperienceMatrix() {
                       return (
                         <div
                           key={`${tech.id}-${ind.id}`}
+                          onClick={() => setSelectedCell({ tech: tech.id, ind: ind.id })}
                           onMouseEnter={() => {
                             setHoveredRow(tech.id);
                             setHoveredCol(ind.id);
@@ -160,9 +163,9 @@ export default function ExperienceMatrix() {
                             setHoveredRow(null);
                             setHoveredCol(null);
                           }}
-                          className={`group/cell
+                          className={`group/cell cursor-pointer
                             relative min-h-[120px] p-4 rounded-sm border transition-all duration-300 flex flex-wrap gap-4 items-center justify-center
-                            ${clients.length > 0 ? 'bg-dark-900/40 backdrop-blur-sm hover:bg-dark-800/60' : 'bg-transparent'}
+                            ${clients.length > 0 ? 'bg-dark-900/40 backdrop-blur-sm hover:bg-dark-800/60' : 'bg-transparent hover:bg-white/[0.02]'}
                             ${isHovered ? 'border-primary-500/30' : 'border-white/5'}
                             hover:border-primary-500/50 hover:shadow-[0_0_30px_rgba(var(--color-primary-500),0.1)]
                           `}
@@ -198,6 +201,71 @@ export default function ExperienceMatrix() {
           </div>
         </div>
       </div>
+
+      {/* Detail Modal */}
+      <AnimatePresence>
+        {selectedCell && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/80 backdrop-blur-md"
+            onClick={() => setSelectedCell(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-2xl bg-dark-800 border border-white/10 rounded-xl p-6 md:p-10 shadow-2xl overflow-hidden"
+            >
+              {/* Background Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 rounded-full blur-[80px] pointer-events-none -translate-y-1/2 translate-x-1/2" />
+
+              <button
+                onClick={() => setSelectedCell(null)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10 p-2"
+                aria-label={m.modalClose}
+              >
+                <X className="w-6 h-6" />
+              </button>
+
+              <div className="relative z-10">
+                <span className="text-primary-400 text-sm font-bold tracking-widest uppercase mb-3 block">
+                  {m.modalTitle}
+                </span>
+
+                <h3 className="text-2xl md:text-3xl font-serif text-white mb-6">
+                  {technologies.find(t => t.id === selectedCell.tech)?.label}{" "}
+                  <span className="text-gray-400 font-normal italic">× {industries.find(i => i.id === selectedCell.ind)?.label}</span>
+                </h3>
+
+                <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                  {(m.details as any)?.[`${selectedCell.tech}_${selectedCell.ind}`]}
+                </p>
+
+                {matrixData[selectedCell.tech][selectedCell.ind]?.length > 0 && (
+                  <div className="border-t border-white/10 pt-6">
+                    <div className="flex flex-wrap gap-6 items-center">
+                      {matrixData[selectedCell.tech][selectedCell.ind].map((client) => (
+                        <div key={client.name} className="relative w-24 h-14" title={client.name}>
+                          <Image
+                            src={`/brands/${client.logo}`}
+                            alt={`${client.name} logo`}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

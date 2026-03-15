@@ -6,7 +6,7 @@
     "publications": "Publications",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "engage": "Engage"
+    "engage": "Contact"
   },
   "hero": {
     "subtitle": "Data & AI Consultancy",
@@ -26,9 +26,9 @@
     "title1": "Tech-Excellence meets",
     "title2": "Business Leadership.",
     "p1": "Throughout my career, I have partnered with executive teams at global powerhouses like <strong className=\"text-white font-medium\">BMW, Mercedes, Volkswagen, LIDL, and REWE</strong>. My core strength: bridging the exceedingly rare gap between deep technological expertise and high-level strategic business steering.",
-    "p2": "Whether architecting scalable cloud data platforms on <strong className=\"text-white font-medium\">Snowflake, Databricks, and AWS</strong> or taking ownership of complex SAFe project deliveries within a challenging stakeholder landscape—I translate digital visions into measurable and deliverable reality.",
-    "p3": "My experience combines <strong className=\"text-white font-medium\">Classic Data Analytics, AI Strategy, and Enterprise Data Mesh Transformations</strong>. Currently, I am driving the transformation of the financial data ecosystem at PostFinance.",
-    "role": "Executive Consultant"
+    "p2": "Whether architecting scalable cloud data platforms on <strong className=\"text-white font-medium\">Snowflake, Databricks, and AWS</strong> or taking ownership of complex SAFe project deliveries within a challenging stakeholder landscape: I translate digital visions into measurable and deliverable reality.",
+    "p3": "My experience combines <strong className=\"text-white font-medium\">Classic Data Analytics, AI Strategy, and large-scale Business Transformations</strong>. From profound Data Mesh adoptions to comprehensive Cloud Migrations: I am your partner for the strategic transformation of your data landscape.",
+    "role": "Founder & Managing Director"
   },
   "services": {
     "subtitle": "Core Competencies",
@@ -39,7 +39,7 @@
       {
         "id": "01",
         "title": "Data & AI Strategy & Governance",
-        "desc": "Designing future-proof data strategies and rigorous Data & AI Governance models. I align key business objectives with technological capabilities to frame the blueprint for successful Data Mesh adoptions."
+        "desc": "Designing future-proof data strategies and rigorous Data & AI Governance models. I align key business objectives with technological capabilities to frame the blueprint for comprehensive digital transformations (e.g., Data Mesh adoptions)."
       },
       {
         "id": "02",
@@ -54,28 +54,31 @@
     ]
   },
   "experience": {
-    "subtitle": "Executive Track Record",
-    "title1": "Trusted by global ",
+    "subtitle": "Track Record",
+    "title1": "Trusted by  ",
     "title2": "industry leaders.",
     "title": "Career trajectory",
     "items": [
       {
-        "company": "PostFinance",
-        "role": "Data Strategist & Architect",
-        "period": "2023 - Present",
-        "desc": "Driving digital transformation and architecting modern financial data platforms in Switzerland."
-      },
-      {
-        "company": "KPMG",
-        "role": "Senior Consultant Data & Analytics",
-        "period": "2020 - 2023",
-        "desc": "Advised major retail and CPG clients including LIDL and REWE on data strategy, governance, and advanced analytics implementations."
+        "company": "Helvata Consulting",
+        "role": "Founder & Managing Director",
+        "period": "2026 - Present",
+        "desc": "Founding and strategic leadership of Helvata Consulting, focusing on Data & AI Architecture and Enterprise Transformations.",
+        "fullDescription": "As the founder of Helvata Consulting, I advise industry-leading enterprises on the strategic planning and technical execution of sophisticated data landscapes. I bridge the gap between deep technological architecture (Cloud Data Platforms, Data Mesh, AI) and strategic management to drive sustainable business value."
       },
       {
         "company": "Deloitte",
-        "role": "Consultant AI & Data",
-        "period": "2017 - 2020",
-        "desc": "Architected intelligent data solutions and deployed machine learning models for automotive giants like BMW, Mercedes, and Volkswagen."
+        "role": "Data & AI Consultant",
+        "period": "2022 - 2025",
+        "desc": "Focus on large-scale cloud transformations in Automotive and Insurance, Data Mesh, and agile SAFe methodology.",
+        "fullDescription": "Comprehensive architecture and consulting engagements for premium clients in the automotive and insurance sectors. Responsible for driving large-scale cloud transformations, executing Data Mesh designs, and leading agile transformations within the SAFe framework. Acted as a Data Architect for modern Cloud Data Platforms and mentored trainees as a Snowflake & Cloud Data Engineering tutor."
+      },
+      {
+        "company": "KPMG",
+        "role": "Data & Analytics Consultant",
+        "period": "2019 - 2022",
+        "desc": "Development of Cloud Data Platforms and BI & Analytics solutions with a strong retail focus.",
+        "fullDescription": "Strategic and technical consulting in the retail sector for key clients such as LIDL and REWE. Engineered advanced BI & Analytics dashboards and scalable Cloud Data Platforms to optimize supply chain and category management through data-driven insights."
       }
     ]
   },
@@ -94,15 +97,35 @@
       "platforms": "Cloud Data Platforms",
       "analytics": "BI & Data Analytics",
       "enterprise": "Enterprise Transformation"
+    },
+    "modalTitle": "Project Details",
+    "modalClose": "Close",
+    "details": {
+      "strategy_automotive": "Development of holistic Data & AI strategies for leading automotive manufacturers. Focus on connected car data, autonomous driving systems, and enterprise-wide AI governance.",
+      "strategy_retail": "Establishing central data strategies in retail for supply chain optimization, personalized marketing, and dynamic pricing with a strong focus on governance.",
+      "strategy_finance": "Strategic implementation of modern data concepts (such as Data Mesh) in the financial sector. Ensuring compliance, data privacy, and developing a future-proof data landscape.",
+      "strategy_telecom": "Governance and strategic alignment for major telecom providers to securely and monetize customer data in real-time.",
+      "platforms_automotive": "Architecture and implementation of scalable cloud data platforms (AWS, Snowflake, Databricks) for global vehicle connectivity and telemetry analysis.",
+      "platforms_retail": "Building high-availability cloud data lakehouses for retailers to process and analyze billions of POS transactions in real-time.",
+      "platforms_finance": "Designing and executing highly secure cloud architectures for banks and insurance companies that meet the strictest regulatory requirements.",
+      "platforms_telecom": "Migrating complex on-premise data infrastructures to the cloud for processing high-volume network and connection data.",
+      "analytics_automotive": "Modernizing classic BI and Data Warehouse landscapes to deliver agile dashboards for global supply chain management.",
+      "analytics_retail": "Building advanced analytics pipelines for inventory management and precise analysis of customer behavior in multi-channel retail.",
+      "analytics_finance": "Classic data analysis and BI for fraud detection and risk management optimization in banking.",
+      "analytics_telecom": "Big Data analytics for churn prediction and network utilization optimization.",
+      "enterprise_automotive": "Leading complex cloud transformations in a SAFe environment for German premium manufacturers. End-to-end delivery with strong stakeholder management.",
+      "enterprise_retail": "Guiding agile transformations in the retail sector. Coaching management and teams to establish a data-driven corporate culture.",
+      "enterprise_finance": "Directing large transformation programs in the banking sector to replace fragmented data structures with decentralized, future-ready approaches (including Data Mesh).",
+      "enterprise_telecom": "Strategic project management for restructuring data organizations in major telecommunications companies according to agile principles."
     }
   },
   "cta": {
     "subtitle": "Initiate Contact",
     "title1": "Ready to build",
     "title2": "the future?",
-    "description": "Whether you need to untangle a complex data landscape or architect a generative AI solution, let's discuss how we can drive measurable impact for your enterprise.",
+    "description": "Whether you need to untangle a complex data landscape or architect a generative AI solution: let's discuss how we can drive measurable impact for your enterprise.",
     "button": "Schedule a Consultation",
-    "email": "berko@example.com",
+    "email": "contact@berk-oecal.com",
     "location": "Zurich, Switzerland"
   },
   "contactPage": {
@@ -120,5 +143,10 @@
       "submitButton": "Send Message",
       "submittingText": "Sending..."
     }
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "rights": "All rights reserved."
   }
 }

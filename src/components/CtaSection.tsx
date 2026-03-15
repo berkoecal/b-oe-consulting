@@ -3,9 +3,15 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin } from "lucide-react";
 import { useTranslation } from "@/i18n/TranslationProvider";
+import Image from "next/image";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export default function CtaSection() {
   const { dict } = useTranslation();
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
+
   return (
     <>
       <section id="contact" className="py-24 relative overflow-hidden bg-transparent">
@@ -46,17 +52,31 @@ export default function CtaSection() {
 
       {/* Modern Executive Footer */}
       <footer className="py-12 border-t border-white/5 bg-dark-900/40 border-b-4 border-b-primary-600">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left">
-            <p className="font-serif text-xl text-white italic mb-1">Berko</p>
-            <p className="text-sm text-gray-500 font-light">
-              {dict.about.role} &bull; Data & AI
-            </p>
+        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
+          <div className="flex items-center">
+            <Image 
+              src="/logo.svg" 
+              alt="Helvata Logo" 
+              width={120} 
+              height={40} 
+              className="w-auto h-12 opacity-80 hover:opacity-100 transition-opacity"
+            />
           </div>
           
-          <p className="text-gray-600 text-sm font-light">
-            &copy; {new Date().getFullYear()} Berko Consulting. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-end gap-3 text-center md:text-right">
+            <div className="flex items-center gap-4 text-sm text-gray-400">
+              <Link href={`/${locale}/imprint`} className="hover:text-primary-400 transition-colors">
+                {dict.footer.imprint}
+              </Link>
+              <span className="text-white/20">&bull;</span>
+              <Link href={`/${locale}/privacy`} className="hover:text-primary-400 transition-colors">
+                {dict.footer.privacy}
+              </Link>
+            </div>
+            <p className="text-gray-600 text-sm font-light">
+              &copy; {new Date().getFullYear()} Helvata Consulting. {dict.footer.rights}
+            </p>
+          </div>
         </div>
       </footer>
     </>

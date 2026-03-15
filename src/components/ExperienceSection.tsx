@@ -1,7 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "@/i18n/TranslationProvider";
+import { useState } from "react";
+import { X } from "lucide-react";
 
 export default function ExperienceSection() {
   const { dict } = useTranslation();
@@ -19,6 +21,9 @@ export default function ExperienceSection() {
       highlight: false
     }
   ];
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [selectedExp, setSelectedExp] = useState<any | null>(null);
 
   return (
     <section id="experience" className="py-24 bg-dark-900/40 relative">
@@ -58,7 +63,10 @@ export default function ExperienceSection() {
 
               {/* Content Card */}
               <div className="w-[calc(100%-2rem)] md:w-[calc(50%-2.5rem)] ml-8 md:ml-0 md:group-even:pr-10 md:group-odd:pl-10">
-                <div className="glass-panel p-6 md:p-8 rounded-sm hover:-translate-y-1 transition-transform duration-500 relative overflow-hidden">
+                <div 
+                  onClick={() => setSelectedExp(exp)}
+                  className="glass-panel p-6 md:p-8 rounded-sm hover:-translate-y-1 hover:bg-white/[0.04] transition-all duration-500 relative overflow-hidden cursor-pointer"
+                >
                   {exp.highlight && (
                      <div className="absolute top-0 right-0 w-32 h-32 bg-primary-600/10 rounded-full blur-[40px] pointer-events-none" />
                   )}
@@ -81,6 +89,56 @@ export default function ExperienceSection() {
           ))}
         </div>
       </div>
+
+      {/* Detail Modal */}
+      <AnimatePresence>
+        {selectedExp && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-dark-900/80 backdrop-blur-md"
+            onClick={() => setSelectedExp(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-2xl bg-dark-800 border border-white/10 rounded-xl p-6 md:p-10 shadow-2xl overflow-hidden"
+            >
+              {/* Background Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/10 rounded-full blur-[80px] pointer-events-none -translate-y-1/2 translate-x-1/2" />
+
+              <button
+                onClick={() => setSelectedExp(null)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10 p-2"
+                aria-label="Close modal"
+              >
+                <X className="w-6 h-6" />
+              </button>
+
+              <div className="relative z-10">
+                <span className="text-primary-400 text-sm font-bold tracking-widest uppercase mb-3 block">
+                  {selectedExp.period}
+                </span>
+
+                <h3 className="text-2xl md:text-3xl font-serif text-white mb-2">
+                  {selectedExp.company}
+                </h3>
+                
+                <h4 className="text-lg text-gray-400 font-medium mb-6">
+                  {selectedExp.role}
+                </h4>
+
+                <div className="text-gray-300 text-lg leading-relaxed space-y-4">
+                  <p>{selectedExp.fullDescription || selectedExp.desc}</p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

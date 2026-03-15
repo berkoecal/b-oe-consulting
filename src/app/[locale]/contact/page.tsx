@@ -16,7 +16,7 @@ export default function ContactPage() {
             Initiate Contact
           </div>
           <h1 className="text-6xl xl:text-8xl font-serif leading-[1.1] mb-8 text-foreground">
-            Let's shape <br />
+            Let&apos;s shape <br />
             the{" "}
             <span className="text-gradient italic">vision</span> <br />
             together.
