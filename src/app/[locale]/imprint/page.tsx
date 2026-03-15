@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: locale === "de" ? "Impressum" : "Imprint",
+    description: locale === "de"
+      ? "Impressum von Helvata Consulting, Berk Öcal – Zürich, Schweiz."
+      : "Legal notice of Helvata Consulting, Berk Öcal – Zurich, Switzerland.",
+    robots: { index: false, follow: false },
+    alternates: { canonical: `https://www.helvata.ch/${locale}/imprint` },
+  };
+}
 
 export default async function ImprintPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

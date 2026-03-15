@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: locale === "de" ? "Datenschutzerklärung" : "Privacy Policy",
+    description: locale === "de"
+      ? "Datenschutzerklärung von Helvata Consulting gemäss Schweizer nDSG."
+      : "Privacy Policy of Helvata Consulting pursuant to Swiss revFADP.",
+    robots: { index: false, follow: false },
+    alternates: { canonical: `https://www.helvata.ch/${locale}/privacy` },
+  };
+}
 
 export default async function PrivacyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

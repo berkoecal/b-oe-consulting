@@ -1,7 +1,34 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles, getArticleBySlug } from "@/content/articles";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
+
+const BASE_URL = "https://www.helvata.ch";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const article = getArticleBySlug(slug);
+  if (!article) return {};
+  return {
+    title: article.title,
+    description: article.excerpt.slice(0, 160),
+    authors: [{ name: "Berk Öcal", url: BASE_URL }],
+    alternates: { canonical: `${BASE_URL}/${locale}/news/${slug}` },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt.slice(0, 160),
+      url: `${BASE_URL}/${locale}/news/${slug}`,
+      publishedTime: article.date,
+      authors: ["Berk Öcal"],
+    },
+  };
+}
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString("de-CH", {

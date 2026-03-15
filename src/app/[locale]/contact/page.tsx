@@ -1,5 +1,17 @@
+import type { Metadata } from "next";
 import ContactBackground from '@/components/animations/ContactBackground';
 import ContactForm from '@/components/ContactForm';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: locale === "de" ? "Kontakt" : "Contact",
+    description: locale === "de"
+      ? "Kontaktieren Sie Helvata Consulting für Data & AI Strategie, Cloud Data Platforms und digitale Transformation in der Schweiz."
+      : "Contact Helvata Consulting for Data & AI strategy, Cloud Data Platforms, and digital transformation consulting in Switzerland.",
+    alternates: { canonical: `https://www.helvata.ch/${locale}/contact` },
+  };
+}
 
 export default function ContactPage() {
   return (
