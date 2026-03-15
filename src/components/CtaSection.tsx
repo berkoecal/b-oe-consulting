@@ -51,33 +51,54 @@ export default function CtaSection() {
       </section>
 
       {/* Modern Executive Footer */}
-      <footer className="py-12 border-t border-white/5 bg-dark-900/40 border-b-4 border-b-primary-600">
-        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6">
-          <div className="flex items-center">
-            <Image 
-              src="/logo.svg" 
-              alt="Helvata Logo" 
-              width={120} 
-              height={40} 
-              className="w-auto h-12 opacity-80 hover:opacity-100 transition-opacity"
-            />
-          </div>
-          
-          <div className="flex flex-col items-center md:items-end gap-3 text-center md:text-right">
-            <div className="flex items-center gap-4 text-sm text-gray-400">
-              <Link href={`/${locale}/imprint`} className="hover:text-primary-400 transition-colors">
+      <footer className="relative border-t border-white/10 bg-dark-900/80 backdrop-blur-lg overflow-hidden">
+        {/* Subtle gold glow top */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[60%] h-px bg-gradient-to-r from-transparent via-primary-500/60 to-transparent" />
+
+        {/* Faint grid lines */}
+        <div
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          style={{ backgroundImage: "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)", backgroundSize: "80px 80px" }}
+        />
+
+        <div className="relative container mx-auto px-6 py-10">
+          {/* Top row: logo + tagline | nav links */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+            {/* Logo + tagline */}
+            <div className="flex flex-col items-center md:items-start gap-3">
+              <Image
+                src="/logo.svg"
+                alt="Helvata Logo"
+                width={120}
+                height={40}
+                className="w-auto h-11 opacity-90 hover:opacity-100 transition-opacity"
+              />
+              <p className="text-xs text-gray-500 tracking-widest uppercase">
+                Data & AI Consultancy · Zürich
+              </p>
+            </div>
+
+            {/* Legal links */}
+            <div className="flex items-center gap-6 text-sm text-gray-500">
+              <Link href={`/${locale}/imprint`} className="hover:text-primary-400 transition-colors tracking-wide">
                 {dict.footer.imprint}
               </Link>
-              <span className="text-white/20">&bull;</span>
-              <Link href={`/${locale}/privacy`} className="hover:text-primary-400 transition-colors">
+              <span className="text-white/10">|</span>
+              <Link href={`/${locale}/privacy`} className="hover:text-primary-400 transition-colors tracking-wide">
                 {dict.footer.privacy}
               </Link>
             </div>
-            <p className="text-gray-600 text-sm font-light">
-              &copy; {new Date().getFullYear()} Helvata Consulting. {dict.footer.rights}
-            </p>
+          </div>
+
+          {/* Divider */}
+          <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-600">
+            <p>&copy; {new Date().getFullYear()} Helvata Consulting. {dict.footer.rights}</p>
+            <p className="text-primary-400/80 text-xs tracking-widest uppercase font-semibold">Creating value from AI & Data.</p>
           </div>
         </div>
+
+        {/* Bottom accent bar */}
+        <div className="h-[3px] w-full bg-gradient-to-r from-transparent via-primary-600 to-transparent" />
       </footer>
     </>
   );
